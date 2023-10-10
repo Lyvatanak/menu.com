@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu{
+    width: 100%;
+    display: flex;
+    background-color: #e8dede;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+}
+.menu> .logo{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+.menu> .logo img{
+    width: 150px;
+}
+.menu .category{
+    width: 70%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+.menu .category li{
+    padding: 5px 0px;
+    margin: 0 15px;
+    position: relative;
+    overflow: hidden;
+}
+.menu .category li::before{
+    content: "";
+    width: 50%;
+    border-bottom: 3px solid #ff0000;
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    transition: 0.8s;
+}
+.menu .category li::after{
+    content: "";
+    width: 50%;
+    position: absolute;
+    border-bottom: 3px solid #808080;
+    bottom: 0;
+    right: -100%;
+    transition: 0.8s;
+}
+li a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+}
+.menu .search{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.menu .category li:hover::before{
+    left: 0;
+}
+.menu .category li:hover::after{
+    right: 0;
+}
+
+/* Mein */
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.container .image{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.701);
+    position: relative;
+}
+.container .image img{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.591);
+    position: relative;
+    z-index: -1;
+}
+.container .detail{
+    color: white;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translate(0,-50%);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 70px;
+    font-family: Khmer Mondulkiri-s ultra;
+}
+.container .detail .title{
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+.container .detail .date{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 30px
+}
+.container .detail .button button:first-child{
+    background-color: white;
+    border: none;
+    padding: 10px 35px ;
+    font-size: 20px;
+}
+.container .detail .button button:last-child{
+    color: white;
+    background-color: rgba(225, 225, 225, 0.5);
+    border: none;
+    padding: 10px 35px ;
+    font-size: 20px;
+}
+.container .detail .button button:first-child:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+.container .detail .button button:last-child:hover{
+    background-color: red;
+}
+.Sor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.Sor .asor{
+    margin: 0px 10px ;
+    right: 0;
+    right: 30%;
+    position: relative;
+    font-size: 50px;
+    font-family: Khmer Mondulkiri-s ultra;
+}
+hr{
+    width: 50px;
+}
+.Sor .pic img{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    right: 60%;
+    margin: 10% 0%;
+}
+.Sor1 {
+    width: 100%;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.Sor1 .asor1{
+    right: 40%;
+    position: relative;
+    font-size: 35px;
+    font-family: Khmer Mondulkiri-s Semibold;
+}
+.Sor1 .asorr1{
+    left: 40%;
+    position: relative;
+    color: #ff0000;
+}
+.container-box{
+    width: 95%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.popular-box1{
+    width: 50%;
+    height: 600px;
+}
+.news-box2{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0,0,0.5);
+    position: relative;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.news-box2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    transition: 0.8s;
+}
+.newstype-box3{
+    position: absolute;
+    font-size: 20px;
+    top: 150px;
+    left: 100px;
+}
+.ruler-box4{
+    width: 50px;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    border-bottom: 5px solid red;
+}
+.description-box5{
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    font-size: 65px;
+    font-family: Khmer Mondulkiri-s ultra;
+}
+.min-populer-box1 {
+    width: 48%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.min-populer-box1 .news-box2{
+    height: 48%;
+}
+/* .min-popular-box1 .news-box2 .newstype-box3{
+    width:​ 30px;
+    height: 48%;
+} */
+.min-popular-box1 .news-box2 .newstype-box3{
+    font-size: 18px;
+    left: 50px;
+    top: 100px;
+}
+.min-popular-box1 .news-box2 .description-box5{
+    left: 50px;
+    top: 135px;
+}
+.min-popular-box1 .news-box2 .description-box5{
+    font-size: 25px;
+    left: 50px;
+    top: 150px;
+}
+.description-box5:hover{
+    text-decoration: underline;
+}
+.news-box2:hover img{
+    transform: scale(1.05);
+}
+.container-n{
+    width: 130%;
+    display: flex;
+    /* background-color: #ff0000; */
+}
+.container-n .datail-n{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.datail-n .title-n{
+    font-size: 35px;
+    color: black;
+    /* background-color: #ff0000; */
+    font-weight: bold;
+    margin: 20px;
+}
+.datail-n hr{
+    margin: 0 20px;
+}
+.datail-n button{
+    width: fit-content;
+    margin: 20px;
+    padding: 15px 25px;
+    border: 3px solid black;
+    background-color: unset;
+}
+.container-n .news-n{
+    width: 15%;
+    /* display: flex;
+    justify-content: end;
+    align-items: center; */
+    justify-content: space-between;
+}
+.news-n .news-box-n{  /*na man tt*/
+    width: 75%;
+    box-shadow: 0 0 30px -10px black;
+    border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin: 20px;
+    overflow: hidden;
+}
+.news-n .news-box-n img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.news-n .news-box-n .title-n{
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    margin: 5px 10px;
+    width: fit-content;
+    background-color: gray;
+    color: white;
+}
+.news-n .news-box-n .description-n{
+    margin: 0 10px;
+    color: black;
+    padding: 5px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+            line-clamp: 2;
+    -webkit-box-orient:vertical;
+}
+.news-n .news-box-n .profile-n{
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.news-n .news-box-n .profile-n .image-n{
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.news-n .news-box-n .profile-n .image-n img{
+    width: 100%;
+    height: 100%;
+}
+.nak{
+    width: 100%;
+    height: 100vh;
+
+}
+.nak .nak1 img{
+    width: 100%;
+    height: 40%;
+    position: relative;
+}
+.nak .nak2{
+    width: 100%;
+    height: 100%;
+    background-color: #e72929;
+    color:white;
+    bottom: 7px;
+    position: relative;
+}
+.nak2 p{
+    font-size: 30px;
+    font-family: Khmer Mondulkiri-s Semibold;
+    position: relative;
+    left: 10%;
+}
+.nak2 span{
+    left: 10%;
+    font-size: 25px;
+    top: 20px;
+    font-family: Khmer Mondulkiri-s Semibold;
+    position: relative;
+}
+.nak2 .nak3 {
+    position: relative;
+    top: 3%;
+    left: -4%;
+    margin: 10px 0px;
+}
+.nak3 i {
+    margin: 10px;
+}
+.nak2 .nak3  span{
+    left: 13%;
+    position: relative;
+}
+.nak2 .nak4{
+    position: relative;
+    margin-top: 10px;
+    left: 30%;
+    bottom: 15%;
+}
+.nak2 .nak4 p{
+    position: relative;
+    left: 14%;
+}
+.nak2 .nak4 span{
+    position: relative;
+    top: 13%;
+}
+.nak2 .nak5{
+    position: relative;
+    left: 40%;
+    bottom: 31%;
+}
+.nak2 .nak-pic img{
+    width: 10%;
+    height: 10%;
+    position: relative;
+    left: 45%;
+    top: -160px;
+    color: white;
+    background-color: white;
+    border-radius: 5px;
+}
+.nak2 .nak-pic h5{
+    position: relative;
+    left: 45%;
+    bottom: 150px;
+    font-size: 20px;
+}
+.nak2 .nak-pic p{
+    position: relative;
+    left: 40%;
+    bottom: 140px;
+}
+.nak2 .nak6 {
+    position: relative;
+    left: 65%;
+    bottom: 67%;
+}
+.nak2 .nak6 span{
+    font-size: 30px;
+}

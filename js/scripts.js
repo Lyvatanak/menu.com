@@ -2,13 +2,14 @@
 // console.log(JSON.parse(product));
 const product = JSON.parse(localStorage.getItem('products'));
 
-var column = '';
+function Viewproduct(){
+    var column = '';
 product.forEach((val,i,array) => {
     column += `
         <div class="col mb-5">
             <div class="card h-100">
                 <!-- Product image-->
-                <img class="card-img-top" src="${val.img}" alt="..." />
+                <img class="card-img-top" src="${val.image}" alt="..." />
                 <!-- Product details-->
                 <div class="card-body p-4">
                     <div class="text-center">
@@ -29,3 +30,4 @@ product.forEach((val,i,array) => {
     `;
 });
 document.getElementById("demo").innerHTML = column;
+}

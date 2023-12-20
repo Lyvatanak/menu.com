@@ -15,4 +15,4 @@ btnAdd.addEventListener('click',()=>{
         image:'assets/Image/'+image.files[0].Name
     });
     localStorage.setItem('products',JSON.stringify(allproduct));
-});
+}); 
